@@ -16,7 +16,18 @@
     height: 70px;
 }
 
-
+@media screen and (max-width: 1080px) {
+.Header {
+    position: fixed;
+    z-index: 10;
+}
+}
+@media screen and (max-width: 767px) {
+.Header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+}
 
 .HeaderContainer {
     display: flex;
@@ -25,18 +36,16 @@
     margin: 0 36px;
     max-width: 100%;
     position: relative;
-    
 }
 
 .HeaderLogo {
-    height: 20px;
+    height: 16px;
 }
 
 .HeaderNav {
     display: inline-flex;
     align-items: center;
     align-self: center;
-    justify-content: space-between;
 }
 
 .list_item {
@@ -74,18 +83,7 @@
 .HeaderNavListItem__button:hover {
     background-color: #f7911478;
 }
-@media screen and (max-width: 1080px) {
-    .Header {
-        position: fixed;
-        z-index: 10;
-    }
-    }
-    @media screen and (max-width: 767px) {
-    .Header {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-   
+
 
 @media screen and (max-width: 1080px) {
 .list_item {
@@ -212,8 +210,15 @@ img {
     right: -150px;
 }
 
+@media screen and (max-width: 767px) {
+.FirstViewContent__badge-image {
+    height: 102px;
+    width: 102px;
+    top: -20px;
+    right: -85px;
+}
+}
 
-  
 
 .FirstViewContent__button {
     align-items: center;
@@ -231,13 +236,10 @@ img {
     text-decoration: none;
     text-align: center;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     flex-direction: column;
-
 } 
-.FirstViewContent__button {
-    transition: opacity .2s;
-}
+
 .FirstViewContent__button:hover {
     background-color: #f79114aa;
 }
